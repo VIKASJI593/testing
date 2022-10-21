@@ -25,7 +25,7 @@ class CartItem extends React.Component {
       <div className="cart-item">
         <div className="left-block">
          <img style={styles.image} alt = ""  
-         src=" "/> 
+         src="https://img.icons8.com/color/48/000000/rectangle.png "/> 
         </div>
         <div className="right-block">
           <div style={ { fontSize: 25 } }>{title}</div>
