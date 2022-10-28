@@ -1,4 +1,5 @@
 
+import { clear } from '@testing-library/user-event/dist/clear';
 import React from 'react';
 
 class CartItem extends React.Component {
@@ -10,16 +11,35 @@ class CartItem extends React.Component {
       qty: 1,
       img: ''
     }
-   
-  }
+     }
   increaseQuantity = () => {
-      // console.log('this', this.state);
-    this.setState({
-      qty: this.state.qty + 1
+  
+     // setState form 2 - if prevState required use this
+     this.setState((prevState) => {
+      return {
+        qty: prevState.qty + 1
+      }
+      
+    },() =>  {
+      console.log('this.state', this.state);
     });
+}
+  
+  decreaseQuantity = () => {
+    const { qty } = this.state;
+    if (qty === 0) {
+      return;
+    }
+    // setState form 2 - if prevState required use this
+    this.setState((prevState) => {
+      return {
+        qty: prevState.qty - 1
+      }
+       });
+ }
 
-  }
   render () {
+    console.log("state");
     const { price, title, qty } = this.state;
     return (
       <div className="cart-item">
@@ -43,6 +63,7 @@ class CartItem extends React.Component {
               alt="decrease"
               className="action-icons"
               src="https://img.icons8.com/ios-glyphs/30/000000/minus.png"
+              onClick={this.decreaseQuantity}
             />
             <img
               alt="delete"
