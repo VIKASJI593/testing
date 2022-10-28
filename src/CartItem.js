@@ -10,26 +10,7 @@ class CartItem extends React.Component {
       qty: 1,
       img: ''
     }
-    this.testing();
      }
-     testing () {
-        const promise = new Promise((resolve, reject) => {
-          setTimeout(() => {
-            resolve('done');
-          }, 5000);
-        })
-
-        promise.then(() => {
-              // setState acts like a synchronus call
-              this.setState({ qty: 100 });
-        
-              this.setState({ qty: this.state.qty + 10 });
-        
-              this.setState({ qty: this.state.qty + 10 });
-        
-              console.log('state', this.state);
-            });
-          }
   increaseQuantity = () => {
   
      // setState form 2 - if prevState required use this
@@ -37,9 +18,8 @@ class CartItem extends React.Component {
       return {
         qty: prevState.qty + 1
       }
-      // call back function (synchronus)
     },() =>  {
-  console.log('this.state', this.state);
+      console.log('this.state', this.state);
   });
 }
   
@@ -53,6 +33,8 @@ class CartItem extends React.Component {
       return {
         qty: prevState.qty - 1
       }
+    },() =>  {
+      console.log('this.state', this.state);
     });
  }
 
