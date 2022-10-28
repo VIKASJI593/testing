@@ -19,7 +19,7 @@ class CartItem extends React.Component {
       return {
         qty: prevState.qty + 1
       }
-      
+      //call back function
     },() =>  {
       console.log('this.state', this.state);
     });
