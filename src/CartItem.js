@@ -23,9 +23,9 @@ class CartItem extends React.Component {
               // setState acts like a synchronus call
               this.setState({ qty: 100 });
         
-              // this.setState({ qty: this.state.qty + 10 });
+              this.setState({ qty: this.state.qty + 10 });
         
-              // this.setState({ qty: this.state.qty + 10 });
+              this.setState({ qty: this.state.qty + 10 });
         
               console.log('state', this.state);
             });
