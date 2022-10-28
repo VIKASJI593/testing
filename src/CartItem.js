@@ -1,5 +1,4 @@
 
-import { clear } from '@testing-library/user-event/dist/clear';
 import React from 'react';
 
 class CartItem extends React.Component {
@@ -19,10 +18,9 @@ class CartItem extends React.Component {
       return {
         qty: prevState.qty + 1
       }
-      //call back function
     },() =>  {
-      console.log('this.state', this.state);
-    });
+  console.log('this.state', this.state);
+  });
 }
   
   decreaseQuantity = () => {
@@ -35,7 +33,7 @@ class CartItem extends React.Component {
       return {
         qty: prevState.qty - 1
       }
-       });
+    });
  }
 
   render () {
