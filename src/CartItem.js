@@ -1,9 +1,44 @@
 import React from 'react';
 
 class CartItem extends React.Component {
- 
+  constructor () {
+    super();
+    this.state = {
+      price: 999,
+      title: 'Mobile Phone',
+      qty: 1,
+      img: ''
+    }
+    // this.increaseQuantity = this.increaseQuantity.bind(this);
+    // this.testing();
+  }
+
+  // testing () {
+  //   const promise = new Promise((resolve, reject) => {
+  //     setTimeout(() => {
+  //       resolve('done');
+  //     }, 5000);
+  //   })
+
+  //   promise.then(() => {
+  //     // setState acts like a synchronus call
+  //     this.setState({ qty: this.state.qty + 10 });
+
+  //     this.setState({ qty: this.state.qty + 10 });
+
+  //     this.setState({ qty: this.state.qty + 10 });
+
+  //     console.log('state', this.state);
+  //   });
+  // }
   increaseQuantity = () => {
-   
+    // this.state.qty += 1;
+    // console.log('this', this.state);
+    // setState form 1
+    // this.setState({
+    //   qty: this.state.qty + 1
+    // }, () => {});
+
     // setState form 2 - if prevState required use this
     this.setState((prevState) => {
       return {
@@ -26,11 +61,10 @@ class CartItem extends React.Component {
     });
   }
   render () {
-    console.log('this.props', this.props);
-    const { price, title, qty } = this.props.product;
+    console.log('render');
+    const { price, title, qty } = this.state;
     return (
       <div className="cart-item">
-        {this.props.jsx}
         <div className="left-block">
         <img style={styles.image} alt = ""  
          src=" "/> 
@@ -51,7 +85,6 @@ class CartItem extends React.Component {
               alt="decrease"
               className="action-icons"
               src="https://img.icons8.com/ios-glyphs/30/000000/minus.png"
-              onClick={this.decreaseQuantity}
             />
             <img
               alt="delete"
