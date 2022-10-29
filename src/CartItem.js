@@ -1,18 +1,10 @@
 import React from 'react';
 
 class CartItem extends React.Component {
-  constructor () {
-    super();
-    this.state = {
-      price: 999,
-      title: 'Mobile Phone',
-      qty: 1,
-      img: ''
-    }
-    
-  }
+ 
   increaseQuantity = () => {
    
+    // setState form 2 - if prevState required use this
     this.setState((prevState) => {
       return {
         qty: prevState.qty + 1
@@ -34,13 +26,15 @@ class CartItem extends React.Component {
     });
   }
   render () {
-    console.log('render');
-    const { price, title, qty } = this.state;
+    console.log('this.props', this.props);
+    const { price, title, qty } = this.props.product;
     return (
       <div className="cart-item">
-      <div className="left-block">
-        <img style={styles.image} src={product.img} />
-      </div>
+        {this.props.jsx}
+        <div className="left-block">
+        <img style={styles.image} alt = ""  
+         src=" "/> 
+        </div>
         <div className="right-block">
           <div style={ { fontSize: 25 } }>{title}</div>
           <div style={ { color: '#777' } }>Rs {price} </div>
@@ -50,25 +44,25 @@ class CartItem extends React.Component {
             <img
               alt="increase"
               className="action-icons"
-              src="https://img.icons8.com/ios-glyphs/30/000000/plus.png"
-              onClick={() => onIncreaseQuantity(product)}
+              src="https://img.icons8.com/ios-glyphs/30/000000/plus--v1.png"
+              onClick={this.increaseQuantity}
             />
             <img
               alt="decrease"
               className="action-icons"
               src="https://img.icons8.com/ios-glyphs/30/000000/minus.png"
-              onClick={() => onDecreaseQuantity(product)}
+              onClick={this.decreaseQuantity}
             />
             <img
               alt="delete"
               className="action-icons"
-              src="https://img.icons8.com/carbon-copy/100/000000/filled-trash.png"
-              onClick={() => onDeleteProduct(product.id)}
+              src="https://img.icons8.com/fluency/48/000000/filled-trash.png"
             />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 const styles = {
