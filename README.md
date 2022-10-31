@@ -12,6 +12,7 @@ git remote remove tutorial
 git remote
 git remote -v
 git remote add tutorial git@github.com:VIKASJI593/git-tutorial.git
+
 git remote rename tutorial origin
 
 git push -u origin main
