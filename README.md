@@ -20,7 +20,25 @@ git push -u origin main
 
 
 
+//GIT BRANCH
 
+git branch
+
+git branch name
+
+git branch name checkout
+
+git branch
+
+git init 
+
+git add .
+
+git status
+
+git commit -m "msg"
+
+git push -u origin branchname
 
 
 
