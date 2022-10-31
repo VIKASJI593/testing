@@ -1,3 +1,5 @@
+//no-unused-vars
+
 import React from 'react';
 
 class CartItem extends React.Component {
