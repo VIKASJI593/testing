@@ -67,3 +67,13 @@ git remote add origin git@github.com:VIKASJI593/-Mini-Project-Finishing-up.git
 git branch -M main
 
 git push -u origin main
+
+
+
+To update Node.js, you’ll need npm’s handy n module. Run the code below to clear npm’s cache, install n, and update to the latest stable version of Node.js:
+
+sudo npm cache clean -f
+
+sudo npm install -g n
+
+sudo n stable
