@@ -77,3 +77,46 @@ sudo npm cache clean -f
 sudo npm install -g n
 
 sudo n stable
+
+
+
+
+
+
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+...to no avail. Interestingly, if I am actually root and use:
+
+sudo -s 
+apt-get update && apt-get upgrade
+
+
+
+
+
+
+
+
+
+sudo npm install -g n
+sudo n lts
+//restart terminal
+node --version
+npm --version
+
+
+
+
+
+//install shortcut
+sudo apt install shotcut
+
+
+
+//balena etcher
+Install FUSE
+=========
+sudo add-apt-repository universe
+sudo apt install libfuse2
+
+download balena etcher
