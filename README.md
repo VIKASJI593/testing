@@ -90,7 +90,13 @@ git remote
  git remote -v
 
 git remote add firebase https://github.com/VIKASJI593/firebase.git
+
+git remote set-url origin https://github.com/VIKASJI593/firebase.git
 git remote rename firebase origin
+
+git add .
+
+git commit -m "Component-Lifecycle-Mounting"
 
 git branch Component-Lifecycle-Mounting
 git checkout Component-Lifecycle-Mounting
