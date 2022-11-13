@@ -85,7 +85,9 @@ git remote
 
 git remote remove tutorial
 
-git remote git remote -v
+git remote
+
+ git remote -v
 
 git remote add firebase https://github.com/VIKASJI593/firebase.git
 git remote rename firebase origin
@@ -93,9 +95,10 @@ git remote rename firebase origin
 git branch Component-Lifecycle-Mounting
 git checkout Component-Lifecycle-Mounting
 
+
 git push -u origin firebase
 
-git push -f -u origin main
+git push -f -u origin Component-Lifecycle-Mounting
 
 
 
