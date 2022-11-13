@@ -1,12 +1,19 @@
-import React from 'react';
-import Cart from './Cart';
+import React from "react";
+import "./index.css";
 
-function App() {
-  return (
+class App extends React.Component {
+  constructor() {
+    super();
+    console.log('constructor')
+
+  }
+  render (){
+    return(
+ 
     <div className="App">
-      <Cart />
+      
     </div>
   );
 }
-
+}  
 export default App;
