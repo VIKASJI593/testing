@@ -83,7 +83,7 @@ git remote
 
  git remote -v
 
-git remote remove tutorial
+git remote remove firebase
 
 git remote
 
@@ -91,7 +91,12 @@ git remote
 
 git remote add firebase https://github.com/VIKASJI593/firebase.git
 
+git remote add firebase https://github.com/VIKASJI593/testing.git
+
 git remote set-url origin https://github.com/VIKASJI593/firebase.git
+
+git remote set-url origin https://github.com/VIKASJI593/testing.git
+
 git remote rename firebase origin
 
 git add .
