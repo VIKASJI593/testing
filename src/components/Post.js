@@ -61,7 +61,7 @@ const Post = ({ post }) => {
       <div className={styles.postHeader}>
         <div className={styles.postAvatar}>
           <img
-            src="https://image.flaticon.com/icons/svg/2154/2154651.svg"
+            src="https://img.icons8.com/color/256/user.png"
             alt="user-pic"
           />
           <div>
@@ -85,7 +85,7 @@ const Post = ({ post }) => {
           <div className={styles.postLike}>
             <button onClick={handlePostLikeClick}>
               <img
-                src="https://image.flaticon.com/icons/svg/1077/1077035.svg"
+                src="https://img.icons8.com/material-rounded/256/facebook-like.png"
                 alt="likes-icon"
               />
             </button>
@@ -94,7 +94,7 @@ const Post = ({ post }) => {
 
           <div className={styles.postCommentsIcon}>
             <img
-              src="https://image.flaticon.com/icons/svg/1380/1380338.svg"
+              src="https://img.icons8.com/fluency/256/comments.png"
               alt="comments-icon"
             />
             <span>{post.comments.length}</span>

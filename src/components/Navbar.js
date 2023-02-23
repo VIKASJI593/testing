@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className={styles.searchContainer}>
         <img
           className={styles.searchIcon}
-          src="https://image.flaticon.com/icons/svg/483/483356.svg"
+          src="https://img.icons8.com/fluency/256/girl.png"
           alt=""
         />
 
@@ -60,7 +60,7 @@ const Navbar = () => {
                 >
                   <Link to={`/user/${user._id}`}>
                     <img
-                      src="https://image.flaticon.com/icons/svg/2154/2154651.svg"
+                      src="https://img.icons8.com/fluency/256/boy.png"
                       alt=""
                     />
                     <span>{user.name}</span>
@@ -77,7 +77,7 @@ const Navbar = () => {
           <div className={styles.user}>
             <Link to="/settings">
               <img
-                src="https://image.flaticon.com/icons/svg/2154/2154651.svg"
+                src="https://img.icons8.com/color/256/standing-man.png"
                 alt=""
                 className={styles.userDp}
               />
