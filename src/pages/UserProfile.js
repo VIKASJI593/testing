@@ -98,7 +98,7 @@ const UserProfile = () => {
     <div className={styles.settings}>
       <div className={styles.imgContainer}>
         <img
-          src="https://source.unsplash.com/500x700/?tech,code,laptop"
+          src="https://source.unsplash.com/500x700/?man"
           alt=""
         />
       </div>
