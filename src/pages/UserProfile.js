@@ -40,7 +40,7 @@ const UserProfile = () => {
   }
 
   const checkIfUserIsAFriend = () => {
-    const friends = auth.user.friends;
+    const friends = auth.user.friendships;
 
     const friendIds = friends.map((friend) => friend.to_user._id);
     const index = friendIds.indexOf(userId);
@@ -98,7 +98,7 @@ const UserProfile = () => {
     <div className={styles.settings}>
       <div className={styles.imgContainer}>
         <img
-          src="https://image.flaticon.com/icons/svg/2154/2154651.svg"
+          src="https://source.unsplash.com/500x700/?tech,code,laptop"
           alt=""
         />
       </div>
