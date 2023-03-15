@@ -22,3 +22,4 @@ git push -u origin A-SEARCH-CHAT
 
 git push -f -u origin A-SEARCH-CHAT
 
+git clone -b A-SEARCH-CHAT https://github.com/VIKASJI593/testing.git
